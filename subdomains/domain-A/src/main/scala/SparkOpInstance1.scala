@@ -10,8 +10,7 @@ object SparkOpInstance1 extends SubdomainOp {
   override def name: String = "SparkOpInstance1"
   override def inputs: Set[Input] = Set() // No inputs, making it a root
   override def query(inputs: Map[String, DataFrame]): DataFrame = {
-    // Using randomValue from SparkOpInstance20 as instructed
-    val _ = SparkOpInstance20.randomValue
+    // This instance does not use a randomValue from another instance
     SparkSession.builder().getOrCreate().emptyDataFrame
   }
   override def metadata: Metadata = {
