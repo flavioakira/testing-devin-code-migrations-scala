@@ -18,8 +18,8 @@ lazy val commonClasses = (project in file("platform/common-classes"))
 lazy val domainA = (project in file("subdomains/domain-A"))
   .settings(
     name := "Domain A",
-    scalaSource in Compile := baseDirectory.value / "src" / "main" / "scala",
-    scalaSource in Test := baseDirectory.value / "src" / "test" / "scala",
+    Compile / scalaSource := baseDirectory.value / "src" / "main" / "scala",
+    Test / scalaSource := baseDirectory.value / "src" / "test" / "scala",
     libraryDependencies ++= Seq(
       "org.scalatest" %% "scalatest" % "3.2.9" % Test,
       "org.apache.spark" %% "spark-core" % "3.5.1" % Provided,
