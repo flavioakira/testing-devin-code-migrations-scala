@@ -15,7 +15,7 @@ lazy val commonClasses = (project in file("platform/common-classes"))
     )
   )
 
-lazy val domainA = (project in file("subdomains/domain-A"))
+lazy val domainA = (project in file("subdomains/domainA"))
   .settings(
     name := "Domain A",
     Compile / scalaSource := baseDirectory.value / "src" / "main" / "scala",
