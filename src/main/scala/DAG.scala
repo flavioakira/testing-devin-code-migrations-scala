@@ -1,26 +1,12 @@
-import platform.common_classes.SparkOp
+import platform.common_classes.SubdomainOp
 
 object DAG {
-  val ops: Set[SparkOp] = Set(
-    legacy.SparkOpInstance1,
-    legacy.SparkOpInstance2,
-    legacy.SparkOpInstance3,
-    legacy.SparkOpInstance4,
-    legacy.SparkOpInstance5,
-    legacy.SparkOpInstance6,
-    legacy.SparkOpInstance7,
-    legacy.SparkOpInstance8,
-    legacy.SparkOpInstance9,
-    legacy.SparkOpInstance10,
-    legacy.SparkOpInstance11,
-    legacy.SparkOpInstance12,
-    legacy.SparkOpInstance13,
-    legacy.SparkOpInstance14,
-    legacy.SparkOpInstance15,
-    legacy.SparkOpInstance16,
-    legacy.SparkOpInstance17,
-    legacy.SparkOpInstance18,
-    legacy.SparkOpInstance19,
-    legacy.SparkOpInstance20
+  val ops: Set[SubdomainOp] = Set(
+    subdomains.domainA.SparkOpInstance1,
+    subdomains.domainA.SparkOpInstance2,
+    subdomains.domainA.SparkOpInstance3,
+    subdomains.domainA.SparkOpInstance4,
+    subdomains.domainA.SparkOpInstance5
+    // Remaining instances will be added once they are translated and moved to their respective domain packages
   )
 }
