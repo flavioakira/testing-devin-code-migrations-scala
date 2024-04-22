@@ -1,0 +1,19 @@
+[info] welcome to sbt 1.9.9 (Private Build Java 17.0.10)
+[info] loading project definition from /home/ubuntu/testing-devin-code-migrations-scala/project
+[info] loading settings for project root from build.sbt ...
+[info] set current project to Testing Devin Code Migrations Scala (in build file:/home/ubuntu/testing-devin-code-migrations-scala/)
+[warn] sbt 0.13 shell syntax is deprecated; use slash syntax instead: commonClasses / Test / fullClasspath, domainA / Test / fullClasspath, Test / fullClasspath
+[info] compiling 22 Scala sources to /home/ubuntu/testing-devin-code-migrations-scala/target/scala-2.13/test-classes ...
+[error] /home/ubuntu/testing-devin-code-migrations-scala/src/test/scala/subdomains/domainA/sparkops/SparkOpInstance1Test.scala:2:8: object SparkOpInstance1 is not a member of package subdomains.domainA.sparkops
+[error] did you mean SparkOpInstance2?
+[error] import subdomains.domainA.sparkops.SparkOpInstance1
+[error]        ^
+[error] /home/ubuntu/testing-devin-code-migrations-scala/src/test/scala/subdomains/domainA/sparkops/SparkOpInstance1Test.scala:6:12: not found: value SparkOpInstance1
+[error]     assert(SparkOpInstance1.name.matches("^dataset/.+-.+$") || SparkOpInstance1.name.matches("^nu-br/dataset/.+-.+$"))
+[error]            ^
+[error] /home/ubuntu/testing-devin-code-migrations-scala/src/test/scala/subdomains/domainA/sparkops/SparkOpInstance1Test.scala:6:64: not found: value SparkOpInstance1
+[error]     assert(SparkOpInstance1.name.matches("^dataset/.+-.+$") || SparkOpInstance1.name.matches("^nu-br/dataset/.+-.+$"))
+[error]                                                                ^
+[error] three errors found
+[error] (Test / compileIncremental) Compilation failed
+[error] Total time: 5 s, completed Apr 22, 2024, 8:42:42 PM

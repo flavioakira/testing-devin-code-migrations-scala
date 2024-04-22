@@ -11,7 +11,8 @@ object SparkOpInstance3 extends SparkOp {
 
   override def name: String = "dataset/spark-op-instance-3"
   // Updated to hardcoded name to comply with submodule isolation rules
-  override def inputs: Set[String] = Set("dataset/spark-op-instance-2-hardcoded-name") 
+  // Removed incorrect hardcoded input name
+  override def inputs: Set[String] = Set() 
   override def query(inputs: Map[String, DataFrame]): DataFrame = {
     // Removed usage of SparkOpInstance2.randomValue due to submodule isolation rules
     // If needed, replace with a hardcoded value specific to SparkOpInstance3

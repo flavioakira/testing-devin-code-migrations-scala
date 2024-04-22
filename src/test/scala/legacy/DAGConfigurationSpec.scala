@@ -29,7 +29,13 @@ class DAGConfigurationSpec extends FunSuite {
 
   test("SparkOp inputs must exist in the DAG") {
     val opNames = ops.map(_.name).toSet
-    val inputsExist = ops.forall(op => op.inputs.forall(inputName => opNames.contains(inputName)))
+    val inputsExist = ops.forall { op =>
+      op.inputs.forall { inputName =>
+        val exists = opNames.contains(inputName)
+        if (!exists) println(s"Missing input: $inputName for SparkOp: ${op.name}")
+        exists
+      }
+    }
 
     assert(inputsExist, "All SparkOp inputs must exist in the DAG")
   }

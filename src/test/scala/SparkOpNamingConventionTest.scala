@@ -1,4 +1,5 @@
 import munit.FunSuite
+import legacy.DAG
 
 class SparkOpNamingConventionTest extends FunSuite {
 

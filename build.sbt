@@ -34,6 +34,8 @@ lazy val root = (project in file("."))
   .dependsOn(commonClasses, domainA)
   .settings(
     name := "Testing Devin Code Migrations Scala",
+    Test / fullClasspath += baseDirectory.value / "src" / "main" / "scala",
+    Test / fullClasspath += baseDirectory.value / "target" / "scala-2.13" / "classes",
     libraryDependencies ++= Seq(
       "org.scalatest" %% "scalatest" % "3.2.9" % Test,
       "org.apache.spark" %% "spark-core" % "3.5.1" % Provided,
