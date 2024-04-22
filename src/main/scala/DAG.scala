@@ -21,6 +21,8 @@ object DAG {
     legacy.SparkOpInstance17,
     legacy.SparkOpInstance18,
     legacy.SparkOpInstance19,
-    legacy.SparkOpInstance20
+    legacy.SparkOpInstance20,
+    legacy.SparkOpInstance21,
+    legacy.SparkOpInstance22
   )
 }
