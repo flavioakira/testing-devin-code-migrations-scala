@@ -1,4 +1,4 @@
-package legacy
+package subdomain3
 import org.apache.spark.sql.SparkSession
 
 import platform.common_classes.SparkOp
@@ -10,10 +10,10 @@ object SparkOpInstance3 extends SparkOp {
   val randomValue: Int = 6243 // Hardcoded random value
 
   override def name: String = "SparkOpInstance3"
-  override def inputs: Set[String] = Set(SparkOpInstance2.name) // Reference to SparkOpInstance2 as an input using object name
+  override def inputs: Set[String] = Set("SparkOpInstance2") // Hardcoded name of SparkOpInstance2
   override def query(inputs: Map[String, DataFrame]): DataFrame = {
-    // Using randomValue from SparkOpInstance2 as instructed
-    val _ = SparkOpInstance2.randomValue
+    // Using hardcoded randomValue previously from SparkOpInstance2
+    val _ = 1987 // This value was previously SparkOpInstance2.randomValue
     SparkSession.builder().getOrCreate().emptyDataFrame
   }
   override def metadata: Metadata = {
