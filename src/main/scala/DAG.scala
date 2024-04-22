@@ -21,8 +21,8 @@ object DAG {
     SparkOpInstance13,
     SparkOpInstance14,
     SparkOpInstance15,
-    "dataset/spark-op-instance-16",
-    "dataset/spark-op-instance-17",
+    SparkOpInstance16,
+    SparkOpInstance17,
     SparkOpInstance18,
     SparkOpInstance19,
     SparkOpInstance20
