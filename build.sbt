@@ -80,7 +80,7 @@ lazy val subdomain4 = (project in file("subdomains/subdomain4"))
 
 lazy val root = (project in file("."))
   .aggregate(commonClasses, domainA, subdomain1, subdomain2, subdomain3, subdomain4, utils)
-  .dependsOn(commonClasses)
+  .dependsOn(commonClasses, subdomain1, subdomain2, subdomain3, subdomain4)
   .settings(
     name := "Testing Devin Code Migrations Scala",
     libraryDependencies ++= Seq(
