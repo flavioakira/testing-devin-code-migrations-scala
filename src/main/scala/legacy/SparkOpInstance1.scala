@@ -22,4 +22,6 @@ object SparkOpInstance1 extends SparkOp {
     // Mock implementation for runConfigurations
     new RunConfigurations()
   }
+
+  // This is a sample comment added by Devin for demonstration purposes.
 }
