@@ -20,6 +20,7 @@ lazy val domainA = (project in file("subdomains/domainA"))
     name := "Domain A",
     Compile / scalaSource := baseDirectory.value / "src" / "main" / "scala",
     Test / scalaSource := baseDirectory.value / "src" / "test" / "scala",
+    Test / fullClasspath += (Compile / classDirectory).value,
     libraryDependencies ++= Seq(
       "org.scalatest" %% "scalatest" % "3.2.9" % Test,
       "org.apache.spark" %% "spark-core" % "3.5.1" % Provided,
@@ -30,7 +31,7 @@ lazy val domainA = (project in file("subdomains/domainA"))
 
 lazy val root = (project in file("."))
   .aggregate(commonClasses, domainA)
-  .dependsOn(commonClasses)
+  .dependsOn(commonClasses, domainA)
   .settings(
     name := "Testing Devin Code Migrations Scala",
     libraryDependencies ++= Seq(
