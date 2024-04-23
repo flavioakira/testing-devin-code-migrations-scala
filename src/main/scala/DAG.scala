@@ -8,13 +8,13 @@ object DAG {
     // legacy.SparkOpInstance2, // Removed reference to SparkOpInstance2 as it has been migrated to a new submodule
     // SparkOpInstance3, // Now extends SubdomainOp, not included in SparkOp set
     // SparkOpInstance4, // Now extends SubdomainOp, not included in SparkOp set
+    // SparkOpInstance5, // Now extends SubdomainOp, not included in SparkOp set
     // SparkOpInstance6, // Now extends SubdomainOp, not included in SparkOp set
     // SparkOpInstance7, // Now extends SubdomainOp, not included in SparkOp set
-    SparkOpInstance5,
+    // SparkOpInstance10, // Now extends SubdomainOp, not included in SparkOp set
+    // SparkOpInstance11, // Now extends SubdomainOp, not included in SparkOp set
     SparkOpInstance8,
     SparkOpInstance9,
-    SparkOpInstance10,
-    SparkOpInstance11,
     SparkOpInstance12,
     SparkOpInstance13,
     SparkOpInstance14,
@@ -30,7 +30,10 @@ object DAG {
     // Include instances of SubdomainOp here
     SparkOpInstance3, // Adapted to extend SubdomainOp
     SparkOpInstance4, // Adapted to extend SubdomainOp
+    SparkOpInstance5, // Adapted to extend SubdomainOp
     SparkOpInstance6, // Adapted to extend SubdomainOp
-    SparkOpInstance7  // Adapted to extend SubdomainOp
+    SparkOpInstance7, // Adapted to extend SubdomainOp
+    SparkOpInstance10, // Adapted to extend SubdomainOp
+    SparkOpInstance11  // Adapted to extend SubdomainOp
   )
 }
