@@ -14,8 +14,8 @@ object DAG {
     // SparkOpInstance10, // Now extends SubdomainOp, not included in SparkOp set
     // SparkOpInstance11, // Now extends SubdomainOp, not included in SparkOp set
     // SparkOpInstance8, // Now extends SubdomainOp, not included in SparkOp set
+    // SparkOpInstance12, // Now extends SubdomainOp, not included in SparkOp set
     SparkOpInstance9,
-    SparkOpInstance12,
     SparkOpInstance13,
     SparkOpInstance14,
     SparkOpInstance15,
@@ -35,6 +35,7 @@ object DAG {
     SparkOpInstance7, // Adapted to extend SubdomainOp
     SparkOpInstance10, // Adapted to extend SubdomainOp
     SparkOpInstance11, // Adapted to extend SubdomainOp
-    SparkOpInstance8  // Adapted to extend SubdomainOp
+    SparkOpInstance8,  // Adapted to extend SubdomainOp
+    SparkOpInstance12  // Adapted to extend SubdomainOp
   )
 }
