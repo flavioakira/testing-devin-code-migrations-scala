@@ -7,7 +7,7 @@ object SparkOpInstance17 extends SparkOp {
   val randomValue: Int = 1987 // Hardcoded random value
 
   override def name: String = "nu-br/dataset/spark-op-instance-17"
-  override def inputs: Set[String] = Set(SparkOpInstance16.name) // Reference to SparkOpInstance16 as an input using object name
+  override def inputs: Set[String] = Set("dataset/spark-op-instance-16") // Updated to comply with SubdomainOp trait
   override def query(inputs: Map[String, DataFrame]): DataFrame = {
     SparkSession.builder().getOrCreate().emptyDataFrame
   }

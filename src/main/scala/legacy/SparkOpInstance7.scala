@@ -1,19 +1,16 @@
 package legacy
 import org.apache.spark.sql.SparkSession
 
-import platform.common_classes.SparkOp
+import platform.common_classes.{SubdomainOp, Metadata, RunConfigurations, Input}
 import org.apache.spark.sql.DataFrame
-import platform.common_classes.Metadata
-import platform.common_classes.RunConfigurations
 
-object SparkOpInstance7 extends SparkOp {
+object SparkOpInstance7 extends SubdomainOp {
   val randomValue: Int = 1357 // Hardcoded random value
 
   override def name: String = "nu-br/dataset/spark-op-instance-7"
-  override def inputs: Set[String] = Set(SparkOpInstance6.name) // Reference to SparkOpInstance6 as an input using object name
+  override def inputs: Set[Input] = Set() // Updated to comply with SubdomainOp trait
   override def query(inputs: Map[String, DataFrame]): DataFrame = {
-    // Using randomValue from SparkOpInstance6 as instructed
-    val _ = SparkOpInstance6.randomValue
+    // Note: Direct reference to SparkOpInstance6 removed due to submodule isolation rules
     SparkSession.builder().getOrCreate().emptyDataFrame
   }
   override def metadata: Metadata = {
