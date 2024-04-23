@@ -12,7 +12,7 @@ object SparkOpInstance11 extends SparkOp {
   override def name: String = "nu-br/dataset/spark-op-instance-11"
   // Reference to SparkOpInstance10 as an input using object name
   // Since SparkOpInstance10 is in a different subdomain, we replace the direct reference with a hardcoded string
-  override def inputs: Set[String] = Set("dataset/spark-op-instance-10")
+  override def inputs: Set[String] = Set("nu-br/dataset/spark-op-instance-10")
   override def query(inputs: Map[String, DataFrame]): DataFrame = {
     // Using hardcoded randomValue previously from SparkOpInstance10
     val _ = 9034 // This value was previously SparkOpInstance10.randomValue

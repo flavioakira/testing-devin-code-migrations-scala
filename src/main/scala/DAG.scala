@@ -1,4 +1,6 @@
 import platform.common_classes.SparkOp
+import org.apache.spark.sql.DataFrame
+import platform.common_classes.{Metadata, RunConfigurations}
 import subdomain1.{SparkOpInstance1, SparkOpInstance4, SparkOpInstance7, SparkOpInstance10, SparkOpInstance14, SparkOpInstance18}
 import subdomain2.{SparkOpInstance2, SparkOpInstance5, SparkOpInstance8, SparkOpInstance11, SparkOpInstance15, SparkOpInstance19}
 import subdomain3.{SparkOpInstance3, SparkOpInstance6, SparkOpInstance9, SparkOpInstance12, SparkOpInstance16, SparkOpInstance20}

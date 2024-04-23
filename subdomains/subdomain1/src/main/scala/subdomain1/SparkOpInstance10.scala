@@ -9,7 +9,7 @@ import platform.common_classes.RunConfigurations
 object SparkOpInstance10 extends SparkOp {
   val randomValue: Int = 9034 // Hardcoded random value
 
-  override def name: String = "dataset/spark-op-instance-10"
+  override def name: String = "nu-br/dataset/spark-op-instance-10"
   // Reference to SparkOpInstance9 as an input using object name
   // Since SparkOpInstance9 is in a different subdomain, we replace the direct reference with a hardcoded string
   override def inputs: Set[String] = Set("nu-br/dataset/spark-op-instance-9")

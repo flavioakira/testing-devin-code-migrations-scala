@@ -9,8 +9,8 @@ import platform.common_classes.RunConfigurations
 object SparkOpInstance3 extends SparkOp {
   val randomValue: Int = 6243 // Hardcoded random value
 
-  override def name: String = "SparkOpInstance3"
-  override def inputs: Set[String] = Set("SparkOpInstance2") // Hardcoded name of SparkOpInstance2
+  override def name: String = "nu-br/dataset/spark-op-instance-3"
+  override def inputs: Set[String] = Set("nu-br/dataset/spark-op-instance-2") // Hardcoded name of SparkOpInstance2
   override def query(inputs: Map[String, DataFrame]): DataFrame = {
     // Using hardcoded randomValue previously from SparkOpInstance2
     val _ = 1987 // This value was previously SparkOpInstance2.randomValue
