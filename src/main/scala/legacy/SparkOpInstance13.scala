@@ -1,5 +1,5 @@
 package legacy
-import org.apache.spark.sql.SparkSession
+import org.apache.spark.sql.{SparkSession, DataFrame}
 
 import platform.common_classes.{SubdomainOp, Metadata, RunConfigurations, Input}
 
