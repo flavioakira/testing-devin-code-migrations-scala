@@ -7,7 +7,7 @@ object DAG {
     // legacy.SparkOpInstance1, // Removed reference to SparkOpInstance1 as it has been migrated to a new submodule
     // legacy.SparkOpInstance2, // Removed reference to SparkOpInstance2 as it has been migrated to a new submodule
     // SparkOpInstance3, // Now extends SubdomainOp, not included in SparkOp set
-    SparkOpInstance4,
+    // SparkOpInstance4, // Now extends SubdomainOp, not included in SparkOp set
     SparkOpInstance5,
     SparkOpInstance6,
     SparkOpInstance7,
@@ -28,6 +28,7 @@ object DAG {
 
   val subdomainOps: Set[SubdomainOp] = Set(
     // Include instances of SubdomainOp here
-    SparkOpInstance3 // Adapted to extend SubdomainOp
+    SparkOpInstance3, // Adapted to extend SubdomainOp
+    SparkOpInstance4  // Adapted to extend SubdomainOp
   )
 }
